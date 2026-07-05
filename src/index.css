@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  
+  /* Custom spiritual and Professional Polish colors */
+  --color-brand-bg: #f8f6fb;
+  --color-brand-text: #331c52;
+  --color-brand-medium: #6b4fa3;
+  --color-brand-deep: #4a1e96;
+  
+  --color-gold: #d4af37;
+  --color-gold-light: #fef9eb;
+  --color-gold-border: #f5e6b3;
+  --color-gold-text: #7a5c00;
+  --color-gold-dark: #b8860b;
+}
+
+/* Custom scrollbars and styling for devotions */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.4);
+}
+
+.devotion-text-gradient {
+  background: linear-gradient(135deg, var(--color-violet-600), var(--color-purple-800));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
